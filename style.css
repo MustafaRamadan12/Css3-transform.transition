@@ -1,0 +1,73 @@
+*{padding: 0%;
+margin: 0%;
+overflow: hidden;
+    box-sizing: border-box;
+}
+.mero{
+    width: 25%;
+position: relative;
+float: left;
+border: solid white 10px;
+}
+
+.sora{
+    width: 100%;
+    transition: transform 1s;
+    transition-delay: 1s;
+   
+  
+}
+.mostafa{
+position: absolute;
+top: 0;
+text-align: center;
+background-color: rgba(133, 55, 31, 0.7);
+height: 100%;
+width: 100%;
+color: white;
+opacity: 0;
+transition: opacity 1s , transform 1s ;
+
+}
+.mostafa h2{
+    padding: 10px;
+    background-color: rgb(160, 15, 27);
+    position: relative;
+    left: 120%;
+    transition: left 1s 2s;
+    
+
+
+}
+.mostafa p{
+    padding: 15px;
+    position: relative;
+    left: 120%;
+    transition: left 1s 3s;
+    
+}
+  .mero:hover .mostafa{
+      opacity: 1;
+      transform: rotate(360deg);
+  
+    }
+    .mero:hover .sora{
+        transform: scale(1.2);
+    }
+.mero:hover .mostafa h2{
+    left: 0%;
+}   
+.mero:hover .mostafa p{
+    left: 0%;
+}
+.clr{
+    clear: both;
+}
+@media screen and (max-width :900px)
+{
+    .mero {
+        width:100%;}
+
+    
+
+}
